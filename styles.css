@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.box {
+    width: 340.73px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+    text-align: left;
+    border-radius: 3.62px;
+}
+
+.options {
+    display: none;
+}
+
+select {
+    margin-left: 10px;
+}
+
+.hr-lines::before {
+   content:"";
+   display: block;
+   height: 2px;
+   width: 120px;
+   position: absolute;
+   top: 50%;
+   left: 0;
+   background: #C8C8C8;
+
+}
+.hr-lines::after {
+    content:"";
+    display: block;
+    height: 2px;
+    width: 120px;
+    position: absolute;
+    top: 50%;
+    right:0;
+    background: #C8C8C8;
+
+ }
+.hr-lines{
+    font-family: Metropolis;
+    position: relative;
+    max-width: 500px;
+    margin-top: 100px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    color: #007F61;
+}
+.des{
+    padding-left: 25px;
+    font-family: Metropolis;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+    
+}
+.discount{
+    font-family: Metropolis;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: right;
+    vertical-align: baseline;
+}
+.text{
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-right: 500px;
+    color: #007F61;
+}
+.total{
+    font-family: Metropolis;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: right;
+    vertical-align: baseline;
+    padding-right: 310px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+button {
+    width: 50%;
+    height: 40px;
+    border: 2px solid grey;
+    background-color: gray;
+    color: white;
+    cursor: pointer;
+    border-radius: 3.62px;
+}
+
+@media (min-width: 768px) {
+    .box {
+        width: 50%;
+    }
+    
+}

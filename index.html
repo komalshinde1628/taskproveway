@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Interactive Boxes</title>
+</head>
+<body>
+<div>
+  <h2 class="hr-lines">Bundle & Save</h2>
+    <div class="box" id="topBox">
+        <!-- <h2>Top Box</h2> -->
+        <label>
+            <input type="radio" name="topBoxRadio" id="topBoxExpand"> 1 Pair <br/>
+            <p class="des">DKK 195.00
+                <p class="discount">50% OFF</p>
+            </p> 
+        </label>
+        <div class="options" id="topBoxOptions">
+            <p>Color:
+                <select>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </p>
+            <p>Size:
+                <select>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </p>
+        </div>
+    </div>
+
+    <div class="box" id="middleBox">
+        <!-- <h2>Middle Box</h2> -->
+        <label>
+            <input type="radio" name="middleBoxRadio" id="middleBoxExpand"> 2 Pair <br/>
+            <p class="des">DKK 345.00
+                <p class="discount">40% OFF</p>
+            </p> 
+        </label>
+        <div class="options" id="middleBoxOptions">
+            <p>Color:
+                <select>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </p>
+            <p>Size:
+                <select>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </p>
+        </div>
+    </div>
+
+    <div class="box" id="bottomBox">
+        <!-- <h2>Bottom Box</h2> -->
+        <label>
+            <input type="radio" name="bottomBoxRadio" id="bottomBoxExpand"> 3 Pair <br/>
+            <p class="des">DKK 528.00
+                <p class="discount">60% OFF</p> 
+            </p>
+           
+        </label>
+        <div class="options" id="bottomBoxOptions">
+            <p>Color:
+                <select>
+                    <option value="red">Red</option>
+                    <option value="green">Green</option>
+                    <option value="blue">Blue</option>
+                </select>
+            </p>
+            <p>Size:
+                <select>
+                    <option value="small">Small</option>
+                    <option value="medium">Medium</option>
+                    <option value="large">Large</option>
+                </select>
+            </p>
+        </div>
+    </div>
+    <div>
+        <div class="text">Free 2 Day Shipping</div> 
+            <div class="total">Total: DKK 360.00</div>
+        </p>
+    </div>
+    <button>+ Add to Cart</button>
+  </div>
+    <script>
+     document.addEventListener("DOMContentLoaded", function () {
+    function toggleOptions(boxId, expandCheckboxId, optionsId) {
+        const expandCheckbox = document.getElementById(expandCheckboxId);
+        const options = document.getElementById(optionsId);
+
+        expandCheckbox.addEventListener("change", function () {
+            options.style.display = expandCheckbox.checked ? "block" : "none";
+        });
+    }
+
+    toggleOptions("topBox", "topBoxExpand", "topBoxOptions");
+    toggleOptions("middleBox", "middleBoxExpand", "middleBoxOptions");
+    toggleOptions("bottomBox", "bottomBoxExpand", "bottomBoxOptions");
+});
+ 
+    </script>
+</body>
+</html>
